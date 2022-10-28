@@ -51,47 +51,30 @@ switch(activity){
 
                 default:
                     console.log(`sit down!`)
+                    break;
 
 }
 
 // EXECISE# 4.4 SWITCH STATEMENTS
 let randValue = Math.random()
-randValue *= 6;
+    randValue *= 5;
 
 let RandomNum = Math.floor(randValue)
-let userInput = Number(prompt(`enter you input`))
+let userInput = Number(prompt(`enter you input between 0 to 5`))
 
 switch(userInput){
     case RandomNum:
-        console.log("you get 5 score")
+        console.log(`You Won`)
         break;
 
-        case RandomNum:
-            console.log("you earned 4 score")
+        default:
+            console.log("TRY AGAIN!!")
             break;
-
-            case RandomNum:
-                console.log("you earned 3 score")
-                break;
-
-                case RandomNum:
-                    console.log("you earned 2")
-                    break;
-
-                    case RandomNum:
-                        console.log("1")
-                        break;
-
-                        case RandomNum:
-                            console.log("0")
-
-                            default:
-                                console.log("TRY AGAIN!!")
-
 }
+console.log(`you get ${RandomNum} score your input was ${userInput}`)
+
 
 // EXERCISE 4.5 
-
 let prize = Number(prompt(`Type any number between 0 to 10! `))
 
 let mySelection = `My selection: ${prize}`;
