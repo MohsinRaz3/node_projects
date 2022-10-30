@@ -55,7 +55,7 @@ switch(activity){
 
 }
 
-// EXECISE# 4.4 SWITCH STATEMENTS
+//EXECISE# 4.4 SWITCH STATEMENTS
 let randValue = Math.random()
     randValue *= 5;
 
@@ -75,34 +75,36 @@ console.log(`you get ${RandomNum} score your input was ${userInput}`)
 
 
 // EXERCISE 4.5 
-let prize = Number(prompt(`Type any number between 0 to 10! `))
+let prize = Number(prompt(`Type any number between 5 to 10! `))
+let randomize = Math.random()
+randomize *= 10;
+randomize = Math.floor(randomize) 
 
 let mySelection = `My selection: ${prize}`;
 switch(prize){
     case 10:
-        console.log( `${mySelection} you earned 10 points`)
+        console.log( `${mySelection} You Typed!! ${randomize} points`)
         break;
 
         case 9:
-        console.log( `${mySelection} you earned 9 points`)
+        console.log( `${mySelection} You Typed!! ${randomize} points`)
         break;
 
         case 8:
-        console.log( `${mySelection} you earned 8 points`)
+        console.log( `${mySelection} You Typed!! ${randomize} points`)
         break;
 
 
         case 7:
-        console.log( `${mySelection} you earned 7 points`)
+        console.log( `${mySelection} You Typed!! ${randomize}  points`)
         break;
 
         case 6:
-        console.log( `${mySelection} you earned 6 points`)
+        console.log( `${mySelection} You Typed!! ${randomize} points`)
         break;
 
-
         case 5:
-        console.log( `${mySelection} you earned 5 points`)
+        console.log( `${mySelection} You Typed!! ${randomize} points`)
         break;
 
         default:
