@@ -6,14 +6,14 @@ let prompt = PromptSync()
 let numTab = Number(prompt(`Input any Number: `))
 
 for(let i=1; i<11; i++){
-    console.log(`${numTab} x ${i} = ${numTab*i}`)
+  //  console.log(`${numTab} x ${i} = ${numTab*i}`)
 }
 
 // WHILE LOOP
 
 let i = 0
 while (i<5){
-    console.log(i)
+   // console.log(i)
     i++
 }
 
@@ -21,7 +21,7 @@ let people = ["faisal", "ahsan", "haider", "imran","hamzah"]
 
 let notFound = true;
 
-while(notFound && people.length > 0){
+while(notFound && people.length > 2){
 
     if (people[0] === "ahsan"){
         console.log("found it")
@@ -37,11 +37,11 @@ let mc = ["faisal", "ahsan", "haider", "imran","hamzah"]
 
 // find method return value from array
 let findAhsan = mc.find( e => e === "ahsan")
-console.log(findAhsan)
+//console.log(findAhsan)
 
 // includes method find the item and return boolean  value
 let checkMikasa = mc.includes("ahsan")
-console.log(checkMikasa)
+//console.log(checkMikasa)
 
 
 //Fabnocci equation
@@ -56,7 +56,7 @@ while(fab.length < 25 ){
     n1 = n2
     n2 = temp
 }
-console.log(fab)
+//console.log(fab)
 
 
 //EXERCISE# 5.1
@@ -72,24 +72,24 @@ while(!notMatch){
     if(guessNum === sol){
         notMatch = true;
 
-        console.log(`Value matched ${guessNum}`)
+   //     console.log(`Value matched ${guessNum}`)
     } 
     else if(guessNum < sol)
     {
         notMatch = true;
-        console.log(`your value ${guessNum} is less than guessed number: ${sol}`)
+    //    console.log(`your value ${guessNum} is less than guessed number: ${sol}`)
     }
     else if(guessNum > 10){
         notMatch = true;
-        console.log(`Please enter value between 1 to 10`)
+      //  console.log(`Please enter value between 1 to 10`)
     }
     else if (guessNum > sol){
         notMatch = true;
-        console.log(`Your value ${guessNum}  is higher than guessed number: ${sol}`)
+       // console.log(`Your value ${guessNum}  is higher than guessed number: ${sol}`)
     }
     else{
         notMatch = true;
-        console.log("Please enter correct value")
+     //   console.log("Please enter correct value")
     }
 }
 
@@ -107,7 +107,7 @@ let countVal = 0;
  
 do{ countVal = countVal + 1}
 while(!(countVal >= 10) ){
-    console.log(countVal)
+   // console.log(countVal)
 }
 
 
@@ -122,22 +122,5 @@ for(let i = 1; i < 11; i++){
         status: statusBool
     })
 }
-console.log(myWork)
+//console.log(myWork)
 
-//EXERCISE3 5.4
-
-let myTable = [];
-
-let rowz = [1,33,45,64,21,44,21,42,34]
-let columnz = [37,54,98,3,66,43,65,34,67]
-
-let counterVar = 0;
-
-for (let i=0; i < rowz.length; i++){
-    myTable.push([])
-
-    for (let j=0; j <columnz.length; j++){
-        myTable[i].push(columnz[j]);
-    }
-}
-console.table(myTable)
