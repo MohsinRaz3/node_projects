@@ -43,3 +43,30 @@ continue;
 console.log(i-1);
 
 }
+
+// break, continue, and nested loops
+
+let groups = [
+    ["Martin", "Daniel", "Keith"],
+    ["Margot", "Marina", "Ali"],
+    ["Helen", "Jonah", "Sambikos"],
+    ];
+
+    // we need to find a group which has to 2 member name starts with "M"
+
+    for(let i=0; i<groups.length; i++){
+        let letter = 0;
+        for(let j=0; j<groups[i].length; j++){
+            if(groups[i][j].startsWith("M")){
+                letter++
+            }
+            else{
+                continue;
+            }
+            if(letter === 1){
+                console.log(`we have found letter M names: ${groups[i]}`);
+                break;
+
+            }
+        }
+    }
