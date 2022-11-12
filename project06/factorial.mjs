@@ -1,3 +1,5 @@
+//Exercise# 6.6
+
 import PromptSync from "prompt-sync";
 let prompt = PromptSync()
 
@@ -8,9 +10,9 @@ function findFactorial(nr){
         return 1
     }
     else {
-       return nr * findFactorial(--nr)
+     return nr * findFactorial(--nr)
        
 
     }
 }
-console.log(findFactorial(7))
+console.log(findFactorial(5))
