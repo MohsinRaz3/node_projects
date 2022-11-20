@@ -1,5 +1,4 @@
 import PromptSync from "prompt-sync";
-
 let prompt = PromptSync()
 
 function userPercent (grades) {
@@ -20,16 +19,12 @@ function userPercent (grades) {
                         console.log(`You got ${grades} : Ok.`)
                         break;
 
-                        case grades === "F":
+                        default:
                             console.log( `You got ${grades} : Study hard.`);
-                            break;
-
-                            default:
-                                console.log("Input valid score.");
+                            break;                      
 
     }
 }
-
 
 function getGrade(percentages,callback){
     let grades;
@@ -50,13 +45,10 @@ function getGrade(percentages,callback){
                     grades= "D";
                     break;
 
-                    case percentages <=50:
+                    default:
                         grades= "F";
                     break;
 
-                    default:
-                        console.log("You got F, need to study hard.");
-                        break;
     }
     callback(grades)
 
