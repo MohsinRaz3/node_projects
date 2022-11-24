@@ -2,19 +2,22 @@
 function makeFryAnda(callback){
 
     setTimeout(()=>{
-    callback("hello fried Anda")}, 1000);
+    callback("hello fried Anda")}, 3000);
 }
 
 // 2nd Step 
 function makeBread(cb){
     setTimeout(() => {
     cb("toast Done")},
-    2000);
+    5000);
 }
-makeBread(function(para){
+
+makeBread((para)=>{
     console.log(para);
 
-    makeFryAnda(function(para1){
-        console.log(para1);
+    makeFryAnda((para)=>{
+        console.log(para);
     })
 });
+
+
