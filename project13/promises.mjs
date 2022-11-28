@@ -1,19 +1,22 @@
-let devpromise = new Promise((resolve, reject)=>{
-    let pomo = 4;
+// let devpromise = new Promise((resolve, reject)=>{
+//     let pomo = 4;
 
-    if(pomo >= 5){
-        resolve("work done!")
-    }
-    else{
-        reject("work not done!")
-    }
-})
+//     if(pomo >= 5){
+//         resolve("work done!")
+//     }
+//     else{
+//         reject("work not done!")
+//     }
+// })
 
-devpromise.then(function(param){
-console.log(param);})
+// devpromise.then(function(param){
+// console.log(param);})
 
-devpromise.catch(function(param){
-console.log(param);})
+// .catch(function(param){
+// console.log(param);})
+
+
+//Second promise function
 
 function myFun(){
     return new Promise((resolve,reject)=>{
@@ -21,16 +24,24 @@ function myFun(){
 
         if(name === "ahsan"){
             resolve("Your eligible")
+
         } else{
-            reject("get out!")
+            reject("Error!")
         }
     })
 }
 
-myFun().then(function(param){
-    console.log(param)
+myFun()
+.then(function(param){
+     console.log(param)
+    
+    
+})
+.then(function(param){
+return "doing god's work"
+    
 })
 
-myFun().catch(function(param){
-    console.log(param);
+.catch((error)=>{
+    console.log(error);
 })
