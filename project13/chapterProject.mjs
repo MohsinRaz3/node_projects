@@ -1,8 +1,7 @@
 let allowedPass = [1234,"mrk", "pak"]
 let res;
 
-function checkPass(){
-   
+function checkPass(){  
     res = allowedPass.includes("mr2k")
    return res;
 }
